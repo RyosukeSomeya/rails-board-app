@@ -51,7 +51,7 @@ class BoardsController < ApplicationController
 
   def board_params
     # 許可したパラメータの内容のみに絞り込み
-    params.require(:board).permit(:name, :title, :body)
+    params.require(:board).permit(:name, :title, :body, tag_ids: [])
   end
 
   def set_target_board
