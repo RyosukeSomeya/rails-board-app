@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'mypage', to: 'user#me'
+  get 'mypage', to: 'users#me'
   post 'login', to: 'sessions#create'
   delete 'logout', to: 'sessions#destroy'
 
